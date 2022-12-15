@@ -5,16 +5,15 @@
     android:id="@+id/drawerlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:backgroundTint="@color/white"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/white"
-        android:scrollbars="none"
-        >
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -69,8 +68,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/ubuntu_bold"
-                        android:text="Member"
                         android:gravity="center"
+                        android:text="Member"
                         android:textAllCaps="false"
                         android:textColor="@color/black"
                         android:textSize="13sp" />
@@ -115,8 +114,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/ubuntu_bold"
-                            android:text="Video Call"
                             android:gravity="center"
+                            android:text="Video Call"
                             android:textAllCaps="false"
                             android:textColor="@color/black"
                             android:textSize="13sp" />
@@ -163,8 +162,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/ubuntu_bold"
-                            android:text="Notice"
                             android:gravity="center"
+                            android:text="Notice"
                             android:textAllCaps="false"
                             android:textColor="@color/black"
                             android:textSize="13sp" />
@@ -214,8 +213,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/ubuntu_bold"
-                        android:text="Call now"
                         android:gravity="center"
+                        android:text="Call now"
                         android:textAllCaps="false"
                         android:textColor="@color/black"
                         android:textSize="13sp" />
@@ -260,8 +259,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/ubuntu_bold"
-                            android:text="Motive"
                             android:gravity="center"
+                            android:text="Motive"
                             android:textAllCaps="false"
                             android:textColor="@color/black"
                             android:textSize="13sp" />
@@ -308,8 +307,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/ubuntu_bold"
-                            android:text="Location"
                             android:gravity="center"
+                            android:text="Location"
                             android:textAllCaps="false"
                             android:textColor="@color/black"
                             android:textSize="13sp" />
@@ -359,8 +358,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/ubuntu_bold"
-                        android:text="Sms"
                         android:gravity="center"
+                        android:text="Sms"
                         android:textAllCaps="false"
                         android:textColor="@color/black"
                         android:textSize="13sp" />
@@ -368,275 +367,271 @@
                 </LinearLayout>
             </LinearLayout>
 
-<!--                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <com.google.android.material.card.MaterialCardView
-                            android:id="@+id/hadis"
-                            android:layout_width="65dp"
-                            android:layout_height="65dp"
-                            android:layout_margin="5dp"
-                            android:backgroundTint="@color/white"
-                            app:cardCornerRadius="15dp"
-                            app:cardElevation="5dp">
+            <!--                </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:orientation="vertical">
+                                android:layout_margin="10dp"
+                                android:orientation="horizontal">
 
-                                <ImageView
-                                    android:layout_width="35dp"
-                                    android:layout_height="35dp"
-                                    android:src="@drawable/category" />
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <com.google.android.material.card.MaterialCardView
+                                        android:id="@+id/hadis"
+                                        android:layout_width="65dp"
+                                        android:layout_height="65dp"
+                                        android:layout_margin="5dp"
+                                        android:backgroundTint="@color/white"
+                                        app:cardCornerRadius="15dp"
+                                        app:cardElevation="5dp">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:orientation="vertical">
+
+                                            <ImageView
+                                                android:layout_width="35dp"
+                                                android:layout_height="35dp"
+                                                android:src="@drawable/category" />
+                                        </LinearLayout>
+
+                                    </com.google.android.material.card.MaterialCardView>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/kalpurush"
+                                        android:gravity="center"
+                                        android:text="হাদিস"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/black"
+                                        android:textSize="13sp" />
+
+                                </LinearLayout>
+
                             </LinearLayout>
-
-                        </com.google.android.material.card.MaterialCardView>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/kalpurush"
-                            android:gravity="center"
-                            android:text="হাদিস"
-                            android:textAllCaps="false"
-                            android:textColor="@color/black"
-                            android:textSize="13sp" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <com.google.android.material.card.MaterialCardView
-                            android:id="@+id/tasbih"
-                            android:layout_width="65dp"
-                            android:layout_height="65dp"
-                            android:layout_margin="5dp"
-                            android:backgroundTint="@color/white"
-                            app:cardCornerRadius="15dp"
-                            app:cardElevation="5dp">
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:orientation="vertical">
+                                android:layout_margin="10dp"
+                                android:orientation="horizontal">
 
-                                <ImageView
-                                    android:layout_width="35dp"
-                                    android:layout_height="35dp"
-                                    android:src="@drawable/category" />
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <com.google.android.material.card.MaterialCardView
+                                        android:id="@+id/tasbih"
+                                        android:layout_width="65dp"
+                                        android:layout_height="65dp"
+                                        android:layout_margin="5dp"
+                                        android:backgroundTint="@color/white"
+                                        app:cardCornerRadius="15dp"
+                                        app:cardElevation="5dp">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:orientation="vertical">
+
+                                            <ImageView
+                                                android:layout_width="35dp"
+                                                android:layout_height="35dp"
+                                                android:src="@drawable/category" />
+                                        </LinearLayout>
+
+                                    </com.google.android.material.card.MaterialCardView>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/kalpurush"
+                                        android:gravity="center"
+                                        android:text="তাসবিহ"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/black"
+                                        android:textSize="13sp" />
+
+                                </LinearLayout>
+
                             </LinearLayout>
 
-                        </com.google.android.material.card.MaterialCardView>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/kalpurush"
-                            android:gravity="center"
-                            android:text="তাসবিহ"
-                            android:textAllCaps="false"
-                            android:textColor="@color/black"
-                            android:textSize="13sp" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:orientation="vertical">
-
-                    <com.google.android.material.card.MaterialCardView
-                        android:id="@+id/qibla"
-                        android:layout_width="65dp"
-                        android:layout_height="65dp"
-                        android:layout_margin="5dp"
-                        android:backgroundTint="@color/white"
-                        app:cardCornerRadius="15dp"
-                        app:cardElevation="5dp">
+                        </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:orientation="vertical">
-
-                            <ImageView
-                                android:layout_width="35dp"
-                                android:layout_height="35dp"
-                                android:src="@drawable/category" />
-                        </LinearLayout>
-
-                    </com.google.android.material.card.MaterialCardView>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/kalpurush"
-                        android:gravity="center"
-                        android:text="কিবলা"
-                        android:textAllCaps="false"
-                        android:textColor="@color/black"
-                        android:textSize="13sp" />
-
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <com.google.android.material.card.MaterialCardView
-                            android:id="@+id/allahName"
-                            android:layout_width="65dp"
-                            android:layout_height="65dp"
-                            android:layout_margin="5dp"
-                            android:backgroundTint="@color/white"
-                            app:cardCornerRadius="15dp"
-                            app:cardElevation="5dp">
+                            android:orientation="horizontal">
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
                                 android:orientation="vertical">
 
-                                <ImageView
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
-                                    android:src="@drawable/category" />
-                            </LinearLayout>
+                                <com.google.android.material.card.MaterialCardView
+                                    android:id="@+id/qibla"
+                                    android:layout_width="65dp"
+                                    android:layout_height="65dp"
+                                    android:layout_margin="5dp"
+                                    android:backgroundTint="@color/white"
+                                    app:cardCornerRadius="15dp"
+                                    app:cardElevation="5dp">
 
-                        </com.google.android.material.card.MaterialCardView>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:orientation="vertical">
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/kalpurush"
-                            android:gravity="center"
-                            android:text="আল্লাহর ৯৯ নাম"
-                            android:textAllCaps="false"
-                            android:textColor="@color/black"
-                            android:textSize="13sp" />
+                                        <ImageView
+                                            android:layout_width="35dp"
+                                            android:layout_height="35dp"
+                                            android:src="@drawable/category" />
+                                    </LinearLayout>
 
-                    </LinearLayout>
+                                </com.google.android.material.card.MaterialCardView>
 
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <com.google.android.material.card.MaterialCardView
-                            android:id="@+id/dinsikkha"
-                            android:layout_width="65dp"
-                            android:layout_height="65dp"
-                            android:layout_margin="5dp"
-                            android:backgroundTint="@color/white"
-                            app:cardCornerRadius="15dp"
-                            app:cardElevation="5dp">
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:orientation="vertical">
-
-                                <ImageView
+                                <TextView
                                     android:layout_width="match_parent"
-                                    android:layout_height="35dp"
-                                    android:src="@drawable/category" />
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/kalpurush"
+                                    android:gravity="center"
+                                    android:text="কিবলা"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/black"
+                                    android:textSize="13sp" />
+
                             </LinearLayout>
 
-                        </com.google.android.material.card.MaterialCardView>
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/kalpurush"
-                            android:gravity="center"
-                            android:text="দ্বীনি শিক্ষা"
-                            android:textAllCaps="false"
-                            android:textColor="@color/black"
-                            android:textSize="13sp" />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:orientation="horizontal">
 
-                    </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
 
-                </LinearLayout>
+                                    <com.google.android.material.card.MaterialCardView
+                                        android:id="@+id/allahName"
+                                        android:layout_width="65dp"
+                                        android:layout_height="65dp"
+                                        android:layout_margin="5dp"
+                                        android:backgroundTint="@color/white"
+                                        app:cardCornerRadius="15dp"
+                                        app:cardElevation="5dp">
 
-            </LinearLayout>-->
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:orientation="vertical">
 
+                                            <ImageView
+                                                android:layout_width="40dp"
+                                                android:layout_height="40dp"
+                                                android:src="@drawable/category" />
+                                        </LinearLayout>
+
+                                    </com.google.android.material.card.MaterialCardView>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/kalpurush"
+                                        android:gravity="center"
+                                        android:text="আল্লাহর ৯৯ নাম"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/black"
+                                        android:textSize="13sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <com.google.android.material.card.MaterialCardView
+                                        android:id="@+id/dinsikkha"
+                                        android:layout_width="65dp"
+                                        android:layout_height="65dp"
+                                        android:layout_margin="5dp"
+                                        android:backgroundTint="@color/white"
+                                        app:cardCornerRadius="15dp"
+                                        app:cardElevation="5dp">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:orientation="vertical">
+
+                                            <ImageView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="35dp"
+                                                android:src="@drawable/category" />
+                                        </LinearLayout>
+
+                                    </com.google.android.material.card.MaterialCardView>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/kalpurush"
+                                        android:gravity="center"
+                                        android:text="দ্বীনি শিক্ষা"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/black"
+                                        android:textSize="13sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>-->
 
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="বিঃদ্রঃ অ্যাপটিতে কাজ করার সময় ডার্ক মোড অফ রাখুন...!"
                 android:fontFamily="@font/kalpurush"
-                android:textColor="@color/white"
-                android:layout_gravity="center"
-                />
+                android:text="বিঃদ্রঃ অ্যাপটিতে কাজ করার সময় ডার্ক মোড অফ রাখুন...!"
+                android:textColor="@color/white" />
 
             <TextView
-                android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="বিঃদ্রঃ অ্যাপটিতে কাজ করার সময় ডার্ক মোড অফ রাখুন...!"
-                android:fontFamily="@font/kalpurush"
-                android:textColor="@color/black"
                 android:layout_gravity="center"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="20dp"
-                />
-
+                android:fontFamily="@font/kalpurush"
+                android:text="বিঃদ্রঃ অ্যাপটিতে কাজ করার সময় ডার্ক মোড অফ রাখুন...!"
+                android:textColor="@color/black" />
 
 
             <!--#######################################-->

@@ -50,22 +50,24 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = findViewById(R.id.drawerlayout);
         navigationView = findViewById(R.id.navigation_view);
 
-        // #################################################################
-        // drawer layout setting
+        drawerLayout = findViewById(R.id.drawerlayout);
+        navigationView = findViewById(R.id.navigation_view);
         toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.start, R.string.close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        // #################################################################
         // eikhane eituku hocche amader navigation layout er kaj korar jonno.
         navigationView.setNavigationItemSelectedListener(this::onOptionsItemSelected);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
 
+        // #####################################
+        // Clicking activity
+        // #####################################
         quran.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 showDialog_jakat();
             }
         });
@@ -96,9 +98,7 @@ public class MainActivity extends AppCompatActivity {
 /*           case R.id.nav_donation:
                Toast.makeText(this, "শীগ্রহি আসবে!", Toast.LENGTH_SHORT).show();
               break;*/
-<<<<<<< HEAD
             case R.id.nav_notification_notice:
-                // startActivity(new Intent(MainActivity.this, AdminNotification.class));
                 Toast.makeText(this, "নোটিফিকেশান!", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.nav_dev:
@@ -123,62 +123,13 @@ public class MainActivity extends AppCompatActivity {
                     shareIntent.setType("text/plain");
                     shareIntent.putExtra(Intent.EXTRA_SUBJECT, "The Holy Quran -Islamic App");
                     String shareMessage = "\nThe Holy Quran -Islamic App অ্যাপটি ডাউনলোড করুন\n\n";
-                    // shareMessage = shareMessage + "https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID + "\n\n";
+                    shareMessage = shareMessage + "https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID + "\n\n";
                     shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);
                     startActivity(Intent.createChooser(shareIntent, "choose one"));
                     Toast.makeText(this, "শেয়ার করুন!", Toast.LENGTH_SHORT).show();
                 } catch (Exception e) {
                     //e.toString();
                 }
-=======
-                case R.id.nav_notification_notice:
-                   // startActivity(new Intent(MainActivity.this, AdminNotification.class));
-                    Toast.makeText(this, "নোটিফিকেশান!", Toast.LENGTH_SHORT).show();
-                    break;
-                case R.id.nav_req_dev:
-                   // startActivity(new Intent(MainActivity.this, RequestDeveloperActivity.class));
-                    Toast.makeText(this, "আপনার মতামত লিখুন!", Toast.LENGTH_SHORT).show();
-                    break;
-                case R.id.nav_dev:
-                    final Dialog dialog = new Dialog(this);
-                    dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-                    dialog.setContentView(R.layout.developer_bottomsheet_layout);
-
-                    dialog.show();
-                    dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-                    dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                    dialog.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation;
-                    dialog.getWindow().setGravity(Gravity.BOTTOM);
-                    Toast.makeText(this, "ডেভেলপার পরিচয়!", Toast.LENGTH_SHORT).show();
-                    break;
-                case R.id.nav_policy:
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://theholyquranislamicapp.trodev.com/")));
-                    Toast.makeText(this, "প্রাইভেসি পলিসি!", Toast.LENGTH_SHORT).show();
-                    break;
-                case R.id.nav_share:
-                    try {
-                        Intent shareIntent = new Intent(Intent.ACTION_SEND);
-                        shareIntent.setType("text/plain");
-                        shareIntent.putExtra(Intent.EXTRA_SUBJECT, "The Holy Quran -Islamic App");
-                        String shareMessage = "\nThe Holy Quran -Islamic App অ্যাপটি ডাউনলোড করুন\n\n";
-                        shareMessage = shareMessage + "https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID + "\n\n";
-                        shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);
-                        startActivity(Intent.createChooser(shareIntent, "choose one"));
-                        Toast.makeText(this, "শেয়ার করুন!", Toast.LENGTH_SHORT).show();
-                    } catch (Exception e) {
-                        //e.toString();
-                    }
-
-                    break;
-                case R.id.nav_rate:
-                    try {
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + getPackageName())));
-                        Toast.makeText(this, "রেটিং দিন!", Toast.LENGTH_SHORT).show();
-                    } catch (ActivityNotFoundException e) {
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + getPackageName())));
-                    }
-                    break;
->>>>>>> 47a0206af659c5399fb5fa3e885f16a2b8c34bfe
 
                 break;
             case R.id.nav_rate:
@@ -189,6 +140,8 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + getPackageName())));
                 }
                 break;
+
         }
         return super.onOptionsItemSelected(item);
     }
+}
