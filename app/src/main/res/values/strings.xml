@@ -5,4 +5,7 @@
     <string name="home">Home</string>
     <string name="search">Search</string>
     <string name="all_categories">Category</string>
+
+    <string name="start">Open</string>
+    <string name="close">Close</string>
 </resources>
