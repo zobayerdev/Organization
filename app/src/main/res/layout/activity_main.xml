@@ -19,14 +19,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
             android:orientation="vertical">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="130dp"
-                android:layout_gravity="right"
-                android:src="@drawable/category" />
+                android:layout_gravity="center"
+                android:src="@drawable/banner" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -59,7 +60,7 @@
                             <ImageView
                                 android:layout_width="35dp"
                                 android:layout_height="35dp"
-                                android:src="@drawable/category" />
+                                android:src="@drawable/person" />
                         </LinearLayout>
 
                     </com.google.android.material.card.MaterialCardView>
@@ -67,9 +68,9 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kalpurush"
+                        android:fontFamily="@font/ubuntu_bold"
+                        android:text="Member"
                         android:gravity="center"
-                        android:text="আল কোরআন"
                         android:textAllCaps="false"
                         android:textColor="@color/black"
                         android:textSize="13sp" />
@@ -105,7 +106,7 @@
                                 <ImageView
                                     android:layout_width="35dp"
                                     android:layout_height="35dp"
-                                    android:src="@drawable/category" />
+                                    android:src="@drawable/video_call" />
                             </LinearLayout>
 
                         </com.google.android.material.card.MaterialCardView>
@@ -113,9 +114,9 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/ubuntu_bold"
+                            android:text="Video Call"
                             android:gravity="center"
-                            android:text="নামাযের সময়"
                             android:textAllCaps="false"
                             android:textColor="@color/black"
                             android:textSize="13sp" />
@@ -153,7 +154,7 @@
                                 <ImageView
                                     android:layout_width="35dp"
                                     android:layout_height="35dp"
-                                    android:src="@drawable/category" />
+                                    android:src="@drawable/bell" />
                             </LinearLayout>
 
                         </com.google.android.material.card.MaterialCardView>
@@ -161,9 +162,9 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/ubuntu_bold"
+                            android:text="Notice"
                             android:gravity="center"
-                            android:text="দোয়া-সমূহ"
                             android:textAllCaps="false"
                             android:textColor="@color/black"
                             android:textSize="13sp" />
@@ -204,7 +205,7 @@
                             <ImageView
                                 android:layout_width="35dp"
                                 android:layout_height="35dp"
-                                android:src="@drawable/category" />
+                                android:src="@drawable/call" />
                         </LinearLayout>
 
                     </com.google.android.material.card.MaterialCardView>
@@ -212,9 +213,9 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kalpurush"
+                        android:fontFamily="@font/ubuntu_bold"
+                        android:text="Call now"
                         android:gravity="center"
-                        android:text="অফলাইন\nকোরআন"
                         android:textAllCaps="false"
                         android:textColor="@color/black"
                         android:textSize="13sp" />
@@ -250,7 +251,7 @@
                                 <ImageView
                                     android:layout_width="35dp"
                                     android:layout_height="35dp"
-                                    android:src="@drawable/category" />
+                                    android:src="@drawable/motive" />
                             </LinearLayout>
 
                         </com.google.android.material.card.MaterialCardView>
@@ -258,9 +259,9 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/ubuntu_bold"
+                            android:text="Motive"
                             android:gravity="center"
-                            android:text="সেহেরি-ইফতার"
                             android:textAllCaps="false"
                             android:textColor="@color/black"
                             android:textSize="13sp" />
@@ -298,7 +299,7 @@
                                 <ImageView
                                     android:layout_width="35dp"
                                     android:layout_height="35dp"
-                                    android:src="@drawable/category" />
+                                    android:src="@drawable/map" />
                             </LinearLayout>
 
                         </com.google.android.material.card.MaterialCardView>
@@ -306,9 +307,9 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/ubuntu_bold"
+                            android:text="Location"
                             android:gravity="center"
-                            android:text="নামায শিক্ষা"
                             android:textAllCaps="false"
                             android:textColor="@color/black"
                             android:textSize="13sp" />
@@ -349,7 +350,7 @@
                             <ImageView
                                 android:layout_width="35dp"
                                 android:layout_height="35dp"
-                                android:src="@drawable/category" />
+                                android:src="@drawable/messages" />
                         </LinearLayout>
 
                     </com.google.android.material.card.MaterialCardView>
@@ -357,14 +358,17 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kalpurush"
+                        android:fontFamily="@font/ubuntu_bold"
+                        android:text="Sms"
                         android:gravity="center"
-                        android:text="যাকাত"
                         android:textAllCaps="false"
                         android:textColor="@color/black"
                         android:textSize="13sp" />
 
                 </LinearLayout>
+            </LinearLayout>
+
+<!--                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -608,7 +612,7 @@
 
                 </LinearLayout>
 
-            </LinearLayout>
+            </LinearLayout>-->
 
 
 
