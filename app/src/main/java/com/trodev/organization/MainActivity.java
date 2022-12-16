@@ -32,11 +32,13 @@ public class MainActivity extends AppCompatActivity {
     private ActionBarDrawerToggle toggle;
     private NavigationView navigationView;
     private CardView member, video_call, notice,  calls, motives, location,sms,gallery,profile ;
+    private long pressedTime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         member = findViewById(R.id.members);
@@ -69,14 +71,17 @@ public class MainActivity extends AppCompatActivity {
         member.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showDialog_jakat();
+                Intent intent = new Intent(MainActivity.this,MemberActivity.class);
+                startActivity(intent);
+                Toast.makeText(MainActivity.this, "সমিতির প্রতিনিধিদের প্রোফাইল দেখুন", Toast.LENGTH_SHORT).show();
             }
         });
 
         video_call.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showDialog_jakat();
+                Intent intent = new Intent(MainActivity.this,VideoCallActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -90,7 +95,8 @@ public class MainActivity extends AppCompatActivity {
         calls.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showDialog_jakat();
+                Intent intent = new Intent(MainActivity.this,CallActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -205,4 +211,19 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+
+    // In this code, android lifecycle exit on 2 times back-pressed.
+    @Override
+    public void onBackPressed() {
+
+        if (pressedTime + 2000 > System.currentTimeMillis()) {
+            super.onBackPressed();
+            finish();
+        } else {
+            Toast.makeText(getBaseContext(), "Press back again to exit", Toast.LENGTH_SHORT).show();
+        }
+        pressedTime = System.currentTimeMillis();
+    }
+
 }
