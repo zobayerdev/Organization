@@ -4,13 +4,23 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/GItHub/Android Apllication/Organization/app/src/main/res/drawable-v24/ic_add.xml" value="0.151" />
+        <entry key="..\:/GItHub/Android Apllication/Organization/app/src/main/res/drawable-v24/ic_collage.xml" value="0.175" />
+        <entry key="..\:/GItHub/Android Apllication/Organization/app/src/main/res/drawable-v24/ic_dev.xml" value="0.175" />
+        <entry key="..\:/GItHub/Android Apllication/Organization/app/src/main/res/drawable-v24/ic_notification.xml" value="0.175" />
+        <entry key="..\:/GItHub/Android Apllication/Organization/app/src/main/res/drawable-v24/ic_privacy.xml" value="0.175" />
         <entry key="..\:/GItHub/Android Apllication/Organization/app/src/main/res/drawable-v24/ic_request_admin.xml" value="0.151" />
+        <entry key="..\:/GItHub/Android Apllication/Organization/app/src/main/res/drawable/category.xml" value="0.175" />
         <entry key="..\:/GItHub/Android Apllication/Organization/app/src/main/res/drawable/dialog_background.xml" value="0.1485" />
+        <entry key="..\:/GItHub/Android Apllication/Organization/app/src/main/res/drawable/half_bicycle.xml" value="0.175" />
+        <entry key="..\:/GItHub/Android Apllication/Organization/app/src/main/res/drawable/login.xml" value="0.175" />
+        <entry key="..\:/GItHub/Android Apllication/Organization/app/src/main/res/drawable/menu.xml" value="0.175" />
+        <entry key="..\:/GItHub/Android Apllication/Organization/app/src/main/res/drawable/menu_search_ico.xml" value="0.175" />
+        <entry key="..\:/GItHub/Android Apllication/Organization/app/src/main/res/drawable/profile.xml" value="0.175" />
         <entry key="..\:/GItHub/Android Apllication/Organization/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/GItHub/Android Apllication/Organization/app/src/main/res/layout/developer_bottomsheet_layout.xml" value="0.2046875" />
         <entry key="..\:/GItHub/Android Apllication/Organization/app/src/main/res/layout/header_menu.xml" value="0.1" />
         <entry key="..\:/GItHub/Android Apllication/Organization/app/src/main/res/layout/update_bottomsheet_layout.xml" value="0.2046875" />
-        <entry key="..\:/GItHub/Android Apllication/Organization/app/src/main/res/menu/navigation_menu.xml" value="0.209375" />
+        <entry key="..\:/GItHub/Android Apllication/Organization/app/src/main/res/menu/navigation_menu.xml" value="0.25" />
         <entry key="..\:/GItHub/Organization/app/src/main/res/layout/activity_call.xml" value="0.209375" />
         <entry key="..\:/GItHub/Organization/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/GItHub/Organization/app/src/main/res/layout/activity_member.xml" value="0.19479166666666667" />

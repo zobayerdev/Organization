@@ -2,24 +2,24 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:title="নোটিফিকেশান"
+        android:title="Notification"
         android:id="@+id/nav_notification_notice"
         android:icon="@drawable/bell"/>
     <item
-        android:title="ডেভেলপার"
+        android:title="Developer"
         android:id="@+id/nav_dev"
         android:icon="@drawable/person"/>
     <item
-        android:title="প্রাইভেসি পলিসি"
+        android:title="Privacy Policy"
         android:id="@+id/nav_policy"
-        android:icon="@drawable/privacy"/>
+        android:icon="@drawable/ic_privacy"/>
     <item
-        android:title="শেয়ার করুন"
+        android:title="Share"
         android:id="@+id/nav_share"
         android:icon="@drawable/share"/>
     <item
-        android:title="রেটিং দিন"
+        android:title="Rate us"
         android:id="@+id/nav_rate"
-        android:icon="@drawable/star"/>
+        android:icon="@drawable/rate"/>
 
 </menu>
