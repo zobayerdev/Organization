@@ -31,32 +31,33 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle toggle;
     private NavigationView navigationView;
-    private CardView offlineQuran, tracker, quran, hadis, dinsikkha,
-            prayTime, dua, seheri, prayEdu, jakat, tasbih,
-            qibla, allahName;
+    private CardView member, video_call, notice,  calls, motives, location,sms,gallery,profile ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        prayTime = findViewById(R.id.prayTime);
-        dua = findViewById(R.id.dua);
-        seheri = findViewById(R.id.seheri);
-        prayEdu = findViewById(R.id.prayEdu);
-        jakat = findViewById(R.id.jakat);
-        quran = findViewById(R.id.quran);
-        tracker = findViewById(R.id.tracker);
+        member = findViewById(R.id.members);
+        video_call = findViewById(R.id.video_call);
+        notice = findViewById(R.id.notice);
+        calls = findViewById(R.id.calls);
+        motives = findViewById(R.id.motives);
+        location = findViewById(R.id.location);
+        sms = findViewById(R.id.sms);
+        gallery = findViewById(R.id.gallery);
+        profile = findViewById(R.id.profile);
         drawerLayout = findViewById(R.id.drawerlayout);
         navigationView = findViewById(R.id.navigation_view);
 
-        drawerLayout = findViewById(R.id.drawerlayout);
-        navigationView = findViewById(R.id.navigation_view);
+        // #######################
+        // Drawer Layout implement
         toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.start, R.string.close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        // #################################################################
         // eikhane eituku hocche amader navigation layout er kaj korar jonno.
         navigationView.setNavigationItemSelectedListener(this::onOptionsItemSelected);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
@@ -65,7 +66,64 @@ public class MainActivity extends AppCompatActivity {
         // #####################################
         // Clicking activity
         // #####################################
-        quran.setOnClickListener(new View.OnClickListener() {
+        member.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showDialog_jakat();
+            }
+        });
+
+        video_call.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showDialog_jakat();
+            }
+        });
+
+        notice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showDialog_jakat();
+            }
+        });
+
+        calls.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showDialog_jakat();
+            }
+        });
+
+        motives.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showDialog_jakat();
+            }
+        });
+
+        location.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showDialog_jakat();
+            }
+        });
+
+
+        sms.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showDialog_jakat();
+            }
+        });
+
+        gallery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showDialog_jakat();
+            }
+        });
+
+        profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 showDialog_jakat();
@@ -74,6 +132,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
+    // ##################################
+    // Bottomsheet label working process
     private void showDialog_jakat() {
         final Dialog dialog = new Dialog(this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -114,7 +175,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "ডেভেলপার পরিচয়!", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.nav_policy:
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://theholyquranislamicapp.trodev.com/")));
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.app-privacy-policy.com/live.php?token=qB3iS10fUJmr6yEFtaVo9yve0uuPP3Ok")));
                 Toast.makeText(this, "প্রাইভেসি পলিসি!", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.nav_share:

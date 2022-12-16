@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@drawable/dialog_background"
-    android:layout_height="match_parent">
+    android:orientation="vertical">
 
 
     <LinearLayout
@@ -47,8 +47,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="130dp"
                         android:layout_gravity="center"
-
-                        android:src="@drawable/books" />
+                        android:src="@drawable/banner" />
 
 
                     <TextView
@@ -56,8 +55,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_margin="10dp"
-                        android:text="This app is developed by Trodev."
                         android:fontFamily="@font/liakot_regular"
+                        android:text="This app is developed by Trodev."
                         android:textColor="@color/primary"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -67,8 +66,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_margin="10dp"
-                        android:text="Head Developer:\n            Md. Zobayer Hasan Nayem \n           Software Engineer of Trodev \n           Studied at BUBT (Intake:44)"
                         android:fontFamily="@font/liakot_regular"
+                        android:text="Head Developer:\n           Md. Zobayer Hasan Nayem \n           Software Engineer of Trodev \n"
                         android:textColor="@color/purple_200"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -78,31 +77,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_margin="10dp"
-                        android:text="Theme and Material Collector: \n          Md. Zayed Hasan Noman \n         Graphich Designer of Trodev"
                         android:fontFamily="@font/liakot_regular"
-                        android:textColor="@color/purple_200"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_margin="10dp"
-                        android:text="Data Collector: \n          Md. Saif Tasnim Chawdhury \n         Data Minner of Trodev"
-                        android:fontFamily="@font/liakot_regular"
-                        android:textColor="@color/purple_200"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_margin="10dp"
-                        android:text="সর্বাধিক সাহায্যদানকারীঃ- \n       দারুস সুন্নাহ তাহফিজুল কুরআন মাদ্রাসা \n       পরিচালকঃ আব্দুল্লাহ "
-                        android:fontFamily="@font/kalpurush"
+                        android:text="Sub Developer:\n           Pias Miah \n           Software Developer of Trodev \n"
                         android:textColor="@color/purple_200"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -111,14 +87,88 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
+                        android:fontFamily="@font/kalpurush"
+                        android:text="যোগাযোগ করতে নিম্মক্ত লিঙ্কে click করুন"
+                        android:textAlignment="center"
+                        android:textColor="@color/purple_200"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:autoLink="email"
+                        android:fontFamily="@font/kalpurush"
+                        android:gravity="left"
+                        android:text="zobayer.dev@gmail.com"
+                        android:textColor="@color/purple_200"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:autoLink="phone"
+                        android:fontFamily="@font/kalpurush"
+                        android:gravity="left"
+                        android:text="+8801615257555\n+8801638752371"
+                        android:textColor="@color/purple_200"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <!--                    <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_margin="10dp"
+                                            android:text="Theme and Material Collector: \n          Md. Zayed Hasan Noman \n         Graphich Designer of Trodev"
+                                            android:fontFamily="@font/liakot_regular"
+                                            android:textColor="@color/purple_200"
+                                            android:textSize="18sp"
+                                            android:textStyle="bold" />-->
+
+                    <!--                    <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_margin="10dp"
+                                            android:text="Data Collector: \n          Md. Saif Tasnim Chawdhury \n         Data Minner of Trodev"
+                                            android:fontFamily="@font/liakot_regular"
+                                            android:textColor="@color/purple_200"
+                                            android:textSize="18sp"
+                                            android:textStyle="bold" />-->
+
+
+                    <!--                    <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_margin="10dp"
+                                            android:text="সর্বাধিক সাহায্যদানকারীঃ- \n       দারুস সুন্নাহ তাহফিজুল কুরআন মাদ্রাসা \n       পরিচালকঃ আব্দুল্লাহ "
+                                            android:fontFamily="@font/kalpurush"
+                                            android:textColor="@color/purple_200"
+                                            android:textSize="18sp"
+                                            android:textStyle="bold" />-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
                         android:fontFamily="@font/ubuntu_bold"
                         android:text="copyright 2022 all reserved by Trodev."
                         android:textAlignment="center"
                         android:textColor="@color/purple_200"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:layout_marginBottom="10dp"
-                        />
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
 
                 </LinearLayout>
