@@ -202,7 +202,6 @@ public class MainActivity extends AppCompatActivity {
                 } catch (Exception e) {
                     //e.toString();
                 }
-
                 break;
             case R.id.nav_rate:
                 try {
@@ -212,7 +211,6 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + getPackageName())));
                 }
                 break;
-
         }
         return super.onOptionsItemSelected(item);
     }
