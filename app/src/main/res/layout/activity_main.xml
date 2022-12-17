@@ -23,11 +23,18 @@
             android:layout_marginTop="20dp"
             android:orientation="vertical">
 
-            <ImageView
+<!--            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="130dp"
                 android:layout_gravity="center"
                 android:src="@drawable/banner"
+                />-->
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:src="@drawable/banner"
+                android:layout_gravity="center"
                 />
 
             <LinearLayout
@@ -58,10 +65,10 @@
                             android:layout_gravity="center"
                             android:orientation="vertical">
 
-                            <ImageView
-                                android:layout_width="35dp"
-                                android:layout_height="35dp"
-                                android:src="@drawable/person" />
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/man" />
                         </LinearLayout>
 
                     </com.google.android.material.card.MaterialCardView>
@@ -297,10 +304,10 @@
                                 android:layout_gravity="center"
                                 android:orientation="vertical">
 
-                                <ImageView
+                                <pl.droidsonroids.gif.GifImageView
                                     android:layout_width="35dp"
                                     android:layout_height="35dp"
-                                    android:src="@drawable/map" />
+                                    android:src="@drawable/global" />
                             </LinearLayout>
 
                         </com.google.android.material.card.MaterialCardView>

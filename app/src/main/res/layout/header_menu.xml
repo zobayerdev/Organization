@@ -4,9 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="215dp">
 
-    <ImageView
-        android:layout_width="wrap_content"
+   <ImageView
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/banner"
-        android:contentDescription="@string/app_name" />
+        android:src="@drawable/searching_man"
+        android:contentDescription="@string/app_name"
+       android:layout_gravity="center"
+       />
+
 </LinearLayout>

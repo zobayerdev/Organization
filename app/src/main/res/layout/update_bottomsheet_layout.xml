@@ -107,11 +107,11 @@
                         android:layout_margin="5dp"
                         />
 
-                    <ImageView
+                    <pl.droidsonroids.gif.GifImageView
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/call"
+                        android:src="@drawable/communication"
                         android:layout_margin="5dp"/>
 
                 </LinearLayout>
