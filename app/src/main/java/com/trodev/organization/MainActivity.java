@@ -19,6 +19,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     private NavigationView navigationView;
     private CardView member, video_call, notice,  calls, motives, location,sms,gallery,profile ;
     private long pressedTime;
+    private TextView tv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        tv = (TextView) this.findViewById(R.id.mywidget);
+        tv.setSelected(true);
 
         member = findViewById(R.id.members);
         video_call = findViewById(R.id.video_call);
